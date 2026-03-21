@@ -129,6 +129,17 @@ Before finalizing, the skill verifies:
 - [ ] Tables over paragraphs wherever possible
 - [ ] No file paths or function names leaked
 
+## Part of the PM Toolkit Family
+
+Open-source tools for PMs who ship with AI:
+
+| Tool | What it does |
+|------|-------------|
+| [PM Pilot](https://github.com/mshadmanrahman/pm-pilot) | 20 skills, 5 agents for product managers using Claude Code |
+| [Bug Shepherd](https://github.com/mshadmanrahman/bug-shepherd) | Zero-code bug triage with parallel AI agents |
+| **Tech-to-PM Translator** | **You are here** |
+| [Morning Digest](https://github.com/mshadmanrahman/morning-digest) | AI-powered daily briefing from calendar, email, and Slack |
+
 ## Contributing
 
 Issues and PRs welcome. If you use this skill on your codebase and find gaps in the templates or translation rules, please share what you learned.
