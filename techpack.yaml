@@ -1,0 +1,13 @@
+schemaVersion: 1
+
+identifier: mshadmanrahman/tech-to-pm-translator
+name: Tech-to-PM Translator
+description: "Claude Code skill that converts technical developer docs into PM-friendly knowledge base documents."
+author: Shadman Rahman
+version: 1.0.0
+license: MIT
+
+components:
+  - skill:
+      source: .
+      destination: tech-to-pm-translator
