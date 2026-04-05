@@ -195,6 +195,7 @@ Open-source tools for PMs who use Claude Code:
 | [bug-shepherd](https://github.com/mshadmanrahman/bug-shepherd) | Zero-code bug triage for PMs. Reproduce and sync bugs without reading a line of code. |
 | [morning-digest](https://github.com/mshadmanrahman/morning-digest) | Your morning briefed in 30 seconds. Calendar, email, Slack, and action items in one digest. |
 | [claudecode-guide](https://github.com/mshadmanrahman/claudecode-guide) | The friendly guide to Claude Code. Zero jargon — from first install to daily operating system. |
+| [root-kg](https://github.com/mshadmanrahman/root-kg) | Your knowledge graph. Ask questions across all your notes, meetings, and emails — cited answers in plain English. |
 | **tech-to-pm-translator** | **You are here** |
 
 ---
