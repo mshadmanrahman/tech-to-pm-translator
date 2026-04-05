@@ -1,5 +1,9 @@
 # Tech-to-PM Translator
 
+<p align="center">
+  <img src="assets/hero.png" alt="Tech-to-PM Translator" width="720" />
+</p>
+
 A Claude Code skill that reads your engineering docs and turns them into something you can actually use.
 
 New to Claude Code? Start at [claudecodeguide.dev](https://claudecodeguide.dev) — zero jargon, from first install to daily use.
