@@ -6,7 +6,7 @@
 
 A Claude Code skill that reads your engineering docs and turns them into something you can actually use.
 
-New to Claude Code? Start at [claudecodeguide.dev](https://claudecodeguide.dev) — zero jargon, from first install to daily use.
+New to Claude Code? Start at [claudecodeguide.dev](https://claudecodeguide.dev)  - zero jargon, from first install to daily use.
 
 ---
 
@@ -16,7 +16,7 @@ Engineers write docs for engineers. PMs read them and miss 60% of the meaning.
 
 Architecture decisions, failure modes, and system constraints are buried in code references, file paths, and implementation jargon that non-engineers cannot parse. You end up reading the same paragraph three times, nodding along, and still not knowing what to ask in your next engineering sync.
 
-The result: worse bug reports. Vague specs. Conversations where you can tell the engineer thinks you don't understand the system — because you don't.
+The result: worse bug reports. Vague specs. Conversations where you can tell the engineer thinks you don't understand the system  - because you don't.
 
 ---
 
@@ -26,7 +26,7 @@ This is the thing that makes this skill different from just asking Claude to "su
 
 **Summarization** loses detail. A PM reading a summary still cannot answer follow-up questions. They just know slightly less than before, with more confidence.
 
-**Translation** reframes the same information for a different audience. Every fact stays. Every failure mode stays. What changes is the framing — from "here is how we built it" to "here is what it means for you."
+**Translation** reframes the same information for a different audience. Every fact stays. Every failure mode stays. What changes is the framing  - from "here is how we built it" to "here is what it means for you."
 
 A PM reading a translated doc can understand what breaks, why it breaks, who owns it, and how to talk about it with engineers.
 
@@ -34,15 +34,15 @@ A PM reading a translated doc can understand what breaks, why it breaks, who own
 
 ## What you get
 
-**Before — what the engineering doc says:**
+**Before  - what the engineering doc says:**
 
 > `AuthMiddleware` throws a `401` when the JWT signature validation fails against the RS256 public key stored in `config/keys/auth.pem`. Token expiry is checked via `exp` claim against server UTC. Silent failure occurs when `NEXT_PUBLIC_AUTH_BYPASS=true` in non-prod envs.
 
-**After — what the translator produces:**
+**After  - what the translator produces:**
 
 > **When users get logged out unexpectedly**
 >
-> This happens when the login token is invalid, expired, or was issued in a different environment. Tokens expire based on server time — if a user's device clock is significantly off, they may see this more often.
+> This happens when the login token is invalid, expired, or was issued in a different environment. Tokens expire based on server time  - if a user's device clock is significantly off, they may see this more often.
 >
 > **PM Takeaway:** If QA reports "always logged in" on staging but users are getting logged out in production, this is the likely cause. File the bug with the environment name and whether it's intermittent or consistent.
 >
@@ -103,11 +103,11 @@ Once Claude Code is running, there are two ways to add this skill.
 Open your terminal and run:
 
 ```bash
-# Project-level — only available in this project
+# Project-level  - only available in this project
 mkdir -p .claude/skills/tech-to-pm-translator
 cp SKILL.md .claude/skills/tech-to-pm-translator/SKILL.md
 
-# Or user-level — available across all your projects
+# Or user-level  - available across all your projects
 mkdir -p ~/.claude/skills/tech-to-pm-translator
 cp SKILL.md ~/.claude/skills/tech-to-pm-translator/SKILL.md
 ```
@@ -149,14 +149,14 @@ Create PM context from docs/architecture/ for new-hires
 
 This skill was built by doing the translation manually on a live codebase first, then encoding that process so it could run automatically.
 
-**Input:** 18 developer reference files for a Next.js education platform — routing, middleware, CMS, search, auth, forms, internationalization, tracking, testing, CI/CD, tech debt, and three simultaneous migrations running at once.
+**Input:** 18 developer reference files for a Next.js education platform  - routing, middleware, CMS, search, auth, forms, internationalization, tracking, testing, CI/CD, tech debt, and three simultaneous migrations running at once.
 
 **Output:**
 
-- **Platform Guide** (280 lines): Page rendering pipeline, search mechanics, lead forms, translation systems — including a +30% text expansion rule that causes silent layout failures, which no PM on the team knew about
+- **Platform Guide** (280 lines): Page rendering pipeline, search mechanics, lead forms, translation systems  - including a +30% text expansion rule that causes silent layout failures, which no PM on the team knew about
 - **Bug Anatomy** (250 lines): Six bug families with symptom/cause/severity tables. Why bugs become non-reproducible. How to write a great bug report. PM-to-engineer communication phrase guide.
 - **Migration Landscape** (220 lines): Three migrations explained with before/after tables. Decision framework for when to invest properly vs. apply a minimal fix. ASCII dependency diagram. PM checklist.
-- **Architecture Overview**: Refreshed from outdated v12 docs to current v16 reality — the team had been working from documentation that no longer described the system they were running.
+- **Architecture Overview**: Refreshed from outdated v12 docs to current v16 reality  - the team had been working from documentation that no longer described the system they were running.
 
 ---
 
@@ -195,11 +195,11 @@ Open-source tools for PMs who use Claude Code:
 
 | Tool | What it does |
 |------|-------------|
-| [pm-pilot](https://github.com/mshadmanrahman/pm-pilot) | Claude Code configured for PMs. Meeting prep, PRDs, market sizing — 25 skills, ready to install. |
+| [pm-pilot](https://github.com/mshadmanrahman/pm-pilot) | Claude Code configured for PMs. Meeting prep, PRDs, market sizing  - 25 skills, ready to install. |
 | [bug-shepherd](https://github.com/mshadmanrahman/bug-shepherd) | Zero-code bug triage for PMs. Reproduce and sync bugs without reading a line of code. |
 | [morning-digest](https://github.com/mshadmanrahman/morning-digest) | Your morning briefed in 30 seconds. Calendar, email, Slack, and action items in one digest. |
-| [claudecode-guide](https://github.com/mshadmanrahman/claudecode-guide) | The friendly guide to Claude Code. Zero jargon — from first install to daily operating system. |
-| [root-kg](https://github.com/mshadmanrahman/root-kg) | Your knowledge graph. Ask questions across all your notes, meetings, and emails — cited answers in plain English. |
+| [claudecode-guide](https://github.com/mshadmanrahman/claudecode-guide) | The friendly guide to Claude Code. Zero jargon  - from first install to daily operating system. |
+| [root-kg](https://github.com/mshadmanrahman/root-kg) | Your knowledge graph. Ask questions across all your notes, meetings, and emails  - cited answers in plain English. |
 | **tech-to-pm-translator** | **You are here** |
 
 ---
