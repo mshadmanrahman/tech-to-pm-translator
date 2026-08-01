@@ -1,3 +1,18 @@
+> ## This repo has moved
+>
+> It now ships as the **`tech-to-pm`** plugin inside [**PM Pilot**](https://github.com/mshadmanrahman/pm-pilot):
+>
+> ```bash
+> claude plugin marketplace add mshadmanrahman/pm-pilot
+> claude plugin install tech-to-pm@pm-pilot
+> ```
+>
+> One install surface instead of a repo per skill. The move also fixed dead file paths that broke this skill's bundled reference files for anyone who followed the old install instructions.
+>
+> This repo is archived and read-only. The content below is preserved for reference.
+
+---
+
 # Tech-to-PM Translator
 
 <p align="center">
